@@ -3,6 +3,7 @@
     --colorBlue: #1D75DE;
     --colorGreen: #1ed760;
     --colorGrey: #dedede;
+    --colorBlackBtn: #0B0909;
 }
 
 * {
@@ -19,6 +20,11 @@ body {
     flex-flow: column;
 }
 
+.maxWidth {
+    max-width: 1100px;
+    margin: auto;
+}
+
 /* ------------------------------------------------------------------------------ */
 
 header {
@@ -33,7 +39,6 @@ header {
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px;
 }
 
 #mainMenu a {
@@ -71,18 +76,56 @@ main {
     flex-flow: column;
 }
 
-.premium{
+main section:nth-child(1) {
     background-color: var(--colorBlue);
     height: auto; 
+}
+
+.premium{
+    color: white;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.premium h2 {
+
+ font-size: 2.6rem;
+}
+
+.premium p {
+    margin-top: 30px;
+    font-size: 1.7rem;
+}
+.buttons {
+    margin-top: 30px;
+}
+
+#startPremium {
+    width: 130px;
+    height: 50px;
+    border-radius: 150px;
+    background-color: var(--colorBlackBtn);
+    font-size: medium;
+    font-weight: bold;
     color: white;
 }
 
-.premium article {
-
+#plansPremium {
+    width: 150px;
+    height: 50px;
+    border-radius: 150px;
+    border-color: white;
+    background-color: transparent;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
 }
 
-.foot span {
-
+.premium .foot {
+    font-size: 0.7rem;
+}
+.premium .foot span {
+    text-decoration: underline;
 }
 
 #whyPremium {
