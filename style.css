@@ -4,6 +4,7 @@
     --colorGreen: #1ed760;
     --colorGrey: #dedede;
     --colorBlackBtn: #0B0909;
+    --colorGrayBG: #efefef;
 }
 
 * {
@@ -101,7 +102,7 @@ main section:nth-child(1) {
     margin-top: 30px;
 }
 
-.startPremium {
+.startPremiumBtn {
     width: 130px;
     height: 50px;
     border-radius: 100px;
@@ -111,7 +112,7 @@ main section:nth-child(1) {
     color: white;
 }
 
-.plansPremium {
+.plansPremiumBtn {
     width: 150px;
     height: 50px;
     border-radius: 150px;
@@ -175,7 +176,7 @@ main section:nth-child(2) {
     background-size: contain;
     margin-bottom: 40px;
 }
-
+/* ------------------ imagens dos porque usar o premium --------------------- */
 .whyOff {
     background-image: url(imgs/whyoff.png);
 
@@ -188,7 +189,71 @@ main section:nth-child(2) {
 .whyPlayAll {
     background-image: url(imgs/playAll.png);
 }
-
 .whyChooseU{
     background-image: url(imgs/chooseMusic.png);
+}
+
+/* ---------------------------- seção dos planos ------------------------------ */
+
+main section:nth-child(3) {
+    background-color: var(--colorGrayBG);
+    height: auto; 
+}
+
+.plansPremium {
+    padding: 70px 0 100px 0 ;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.plans {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.plansPremium h2 , .plansPremium p {
+    margin-bottom: 10px;
+}
+
+.plansPremium > div {
+    margin-bottom: 40px;
+}
+
+.plan {
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgb(255 255 255) 0px 8px 0px 0px, rgb(0 0 0 / 30%) 0px 0px 8px;
+    padding: 15px;
+
+    display: flex;
+    flex-flow: column;
+}
+
+.lableBlue {
+    width: auto;
+    padding: 5px;
+    background-color: #1D75DE;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.lableWhite {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--colorBlue);
+    color: var(--colorBlue);
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.plan h3 {
+    font-size: 1.5rem;
+
 }
