@@ -42,8 +42,10 @@ header {
     align-items: center;
 }
 
-#mainMenu a {
+.logo , .logo a{
+    font-size: 2rem;
     color: white;
+    font-weight: bold;
 }
 
 #mainMenu ul {
@@ -62,7 +64,7 @@ header ul  a {
     font-weight: bolder;
     font-size: 1.1rem;
 }
-#mainMenu a:hover , #mainMenu span:hover{
+#mainMenu li > a:hover , #mainMenu li span:hover{
     color: var(--colorGreen)
 }
 
@@ -124,11 +126,11 @@ main section:nth-child(1) {
     color: white;
 }
 
-.premium .foot {
-    font-size: 0.7rem;
+.foot {
+    font-size: 0.8rem !important;
 }
-.premium .foot span {
-    text-decoration: underline;
+.foot span {
+    text-decoration: underline !important; 
 }
 
 main section:nth-child(2) {
@@ -234,11 +236,15 @@ main section:nth-child(3) {
     flex-flow: column;
 }
 
+.widthplan {
+    height: 200px;
+}
+
 .lableBlue {
     width: auto;
     padding: 5px;
     background-color: #1D75DE;
-    border-radius: 5px;
+    border-radius: 3px;
     color: white;
     font-weight: bolder;
     margin-bottom: 10px;
@@ -246,8 +252,8 @@ main section:nth-child(3) {
 
 .lableWhite {
     padding: 5px;
-    border-radius: 5px;
-    border: 2px solid var(--colorBlue);
+    border-radius: 4px;
+    border: 1px solid var(--colorBlue);
     color: var(--colorBlue);
     font-weight: bolder;
     margin-bottom: 10px;
@@ -256,4 +262,119 @@ main section:nth-child(3) {
 .plan h3 {
     font-size: 1.5rem;
 
+}
+
+.plan p {
+    font-size: 1.2rem;
+}
+
+.plan hr {
+    width: auto;
+    margin: 10px 5px;
+}
+
+.benefits {
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: right;
+    margin-bottom: 10px;
+}
+.benefits li {
+    /* line-height: 1.5rem; */
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.planBtn {
+    width: 95%;
+    margin: 0 auto 15px;
+}
+
+/* --------------------------------- FOOTER -------------------------------------- */
+
+footer {
+    background-color: black;
+}
+
+footer section {
+    margin: 80px 100px 50px 100px;
+    display: flex;
+    flex-flow: column;
+
+}
+
+/* ------------ LINKS -------------- */
+
+.footerLinks {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.columnLinks {
+    padding-top: 0.6rem;
+    height: 320px;
+    color: white;
+    flex: 1;
+}
+
+.columnLinks li:nth-child(1) {
+    font-weight: bold;
+    color: var(--colorGrey);
+    height: 2rem;
+}
+
+.columnLinks li {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.linkSM {
+    margin-left: 200px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;   
+}
+
+/* ------------------- BRASIL -------------------- */
+
+.brasil {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.brasil a {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    color: var(--colorGrey);
+}
+.brasil a:hover {
+    color: var(--colorGreen);
+}
+
+/* ---------------- SUPPORTED ----------------- */
+.supported {
+    display: flex;
+    justify-content: space-between;
+
+    color: var(--colorGrey);
+}
+
+.supported ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    font-size: 0.8rem;
+}
+
+.imgArea{
+    width: 50px;
+    height: 50px;
+    fill: white;
 }
