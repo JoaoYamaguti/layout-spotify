@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 :root {
     --colorBlue: #1D75DE;
@@ -5,6 +6,8 @@
     --colorGrey: #dedede;
     --colorBlackBtn: #0B0909;
     --colorGrayBG: #efefef;
+    --colorGrayImg: #222326;
+    --colorGraytextfooter: #919496;
 }
 
 * {
@@ -210,6 +213,47 @@ main section:nth-child(3) {
     align-items: center;
 }
 
+/* ---------------------------- Bandeiras -------------------------------- */
+.flags {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.flag {
+    width: 30px;
+    height: 20px;
+    background-position: center center;
+    background-size: contain;
+}
+
+.visa {
+    background-image:  url(imgs/flags/visa-flag.svg);
+}
+
+.mastercard {
+    background-image: url(imgs/flags/mastercard-flag.svg);
+}
+
+.amex {
+    background-image: url(imgs/flags/amex-flag.svg);
+}
+.elo {
+    background-image: url(imgs/flags/elo-flag.svg);
+}
+.hipercard {
+    background-image: url(imgs/flags/hipercard-flag.svg);
+}
+
+.flags span {
+    text-decoration: underline;
+}
+
+/* ------------------------------- Planos ---------------------------------- */
+
 .plans {
     width: 100%;
     display: flex;
@@ -291,6 +335,10 @@ main section:nth-child(3) {
     margin: 0 auto 15px;
 }
 
+.plan .foot {
+    color: var(--colorGrayImg);
+}
+
 /* --------------------------------- FOOTER -------------------------------------- */
 
 footer {
@@ -319,30 +367,80 @@ footer section {
     padding-top: 0.6rem;
     height: 320px;
     color: white;
-    flex: 1;
 }
 
-.columnLinks li:nth-child(1) {
+.footerLinks > div > a{
+    padding-right: 50px;
+}
+
+.listLinks li:nth-child(1) {
     font-weight: bold;
-    color: var(--colorGrey);
+    color: var(--colorGraytextfooter) !important;
     height: 2rem;
 }
 
-.columnLinks li {
+.listLinks li {
     font-size: 1.1rem;
     margin-bottom: 20px;
+    margin-right: 40px;
 }
 
+.listLinks li:hover {
+    color: var(--colorGreen);
+}
+
+.columnLinks:nth-last-child(1) {
+    flex: 2.5;
+
+    display: flex;
+    justify-content: right;
+}
 .linkSM {
-    margin-left: 200px;
     display: flex;
     flex-flow: row;
-    justify-content: space-between;   
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.linkSM li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+    background-color: var(--colorGrayImg);
+}
+
+
+
+.linkSM li:hover .imgArea {
+    background-color: var(--colorGreen);
+}
+
+.imgArea {
+    background-color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    fill: white;
+}
+.imgInsta {
+    background-image: url(imgs/icons/insta-icon.svg);
+}
+.imgFace {
+    background-image: url(imgs/icons/face-icon.svg);
+}
+.imgTwitter {
+    background-image: url(imgs/icons/twitter-icon.svg);
 }
 
 /* ------------------- BRASIL -------------------- */
 
 .brasil {
+    width: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -351,7 +449,7 @@ footer section {
 .brasil a {
     margin-left: 5px;
     font-size: 0.8rem;
-    color: var(--colorGrey);
+    color: var(--colorGraytextfooter);
 }
 .brasil a:hover {
     color: var(--colorGreen);
@@ -359,11 +457,13 @@ footer section {
 
 /* ---------------- SUPPORTED ----------------- */
 .supported {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 
-    color: var(--colorGrey);
+    color: var(--colorGraytextfooter);
 }
+
 
 .supported ul {
     display: flex;
@@ -373,8 +473,6 @@ footer section {
     font-size: 0.8rem;
 }
 
-.imgArea{
-    width: 50px;
-    height: 50px;
-    fill: white;
+.supported span {
+    font-size: 0.9rem;
 }
