@@ -183,19 +183,18 @@ main section:nth-child(2) {
 }
 /* ------------------ imagens dos porque usar o premium --------------------- */
 .whyOff {
-    background-image: url(imgs/whyoff.png);
+    background-image: url(imgs/whys/whyoff.png);
 
 }
 .whyNoAdd {
-    background-image: url(imgs/noAdd.png);
+    background-image: url(imgs/whys/noAdd.png);
     
 }
-
 .whyPlayAll {
-    background-image: url(imgs/playAll.png);
+    background-image: url(imgs/whys/playAll.png);
 }
 .whyChooseU{
-    background-image: url(imgs/chooseMusic.png);
+    background-image: url(imgs/whys/chooseMusic.png);
 }
 
 /* ---------------------------- seção dos planos ------------------------------ */
