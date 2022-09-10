@@ -162,8 +162,8 @@ main section:nth-child(2) {
     width: 100%;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
-    gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 5px;
 }
 
 .whyBoxes {
@@ -176,7 +176,7 @@ main section:nth-child(2) {
 
 .whyBoxes h3 {
     margin-bottom: 8px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bolder;
 }
 
