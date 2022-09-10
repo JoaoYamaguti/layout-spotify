@@ -11,8 +11,8 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     list-style-type: none;
@@ -25,22 +25,21 @@ body {
 }
 
 .maxWidth {
-    max-width: 1100px;
-    margin: auto;
+    max-width: 1200px;
+    width: 95%;    margin: auto;
 }
 
 /* ------------------------------------------------------------------------------ */
 
 header {
-    display: flex;
-    align-items: center;
     height: 80px;
     background-color: black;
 }
 
-#mainMenu {
+nav {
     display: flex;
     flex: 1;
+    height: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -51,7 +50,7 @@ header {
     font-weight: bold;
 }
 
-#mainMenu ul {
+nav ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
@@ -67,7 +66,7 @@ header ul  a {
     font-weight: bolder;
     font-size: 1.1rem;
 }
-#mainMenu li > a:hover , #mainMenu li span:hover{
+nav li > a:hover , #mainMenu li span:hover{
     color: var(--colorGreen)
 }
 
@@ -84,6 +83,7 @@ main {
 
 main h2 {
     font-size: 2.6rem;
+    line-height: 3.9rem;
     font-weight: bolder;
 }
 
@@ -94,32 +94,35 @@ main section:nth-child(1) {
 
 .premium{
     color: white;
-    margin-top: 70px;
+    margin-top: 64px;
     margin-bottom: 30px;
 }
 
 
 .premium p {
-    margin-top: 30px;
-    font-size: 1.7rem;
+    margin-top: 32px;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
 }
 .buttons {
-    margin-top: 30px;
+    margin-top: 32px;
+
+    display: flex;
+    gap: 8px;
 }
 
+.buttons button {
+    padding: 16px 32px;
+}
 .startPremiumBtn {
-    width: 130px;
-    height: 50px;
+    border: black;
     border-radius: 100px;
     background-color: var(--colorBlackBtn);
     font-size: medium;
     font-weight: bold;
     color: white;
 }
-
 .plansPremiumBtn {
-    width: 150px;
-    height: 50px;
     border-radius: 150px;
     border: 2px solid;
     border-color: white;
@@ -157,21 +160,28 @@ main section:nth-child(2) {
 
 .whys {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    gap: 8px;
 }
 
 .whyBoxes {
     display: flex;
     flex-flow: column;
-
     align-items: center;
+
     text-align: center;
 }
 
 .whyBoxes h3 {
-    flex: 2;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.whyBoxes p {
+    font-size: 1.1rem;
 }
 
 .whyBgSize {
@@ -183,18 +193,18 @@ main section:nth-child(2) {
 }
 /* ------------------ imagens dos porque usar o premium --------------------- */
 .whyOff {
-    background-image: url(imgs/whys/whyoff.png);
+    background-image: url(../imgs/whys/whyoff.png);
 
 }
 .whyNoAdd {
-    background-image: url(imgs/whys/noAdd.png);
+    background-image: url(../imgs/whys/noAdd.png);
     
 }
 .whyPlayAll {
-    background-image: url(imgs/whys/playAll.png);
+    background-image: url(../imgs/whys/playAll.png);
 }
 .whyChooseU{
-    background-image: url(imgs/whys/chooseMusic.png);
+    background-image: url(../imgs/whys/chooseMusic.png);
 }
 
 /* ---------------------------- seção dos planos ------------------------------ */
@@ -230,21 +240,21 @@ main section:nth-child(3) {
 }
 
 .visa {
-    background-image:  url(imgs/flags/visa-flag.svg);
+    background-image:  url(../imgs/flags/visa-flag.svg);
 }
 
 .mastercard {
-    background-image: url(imgs/flags/mastercard-flag.svg);
+    background-image: url(../imgs/flags/mastercard-flag.svg);
 }
 
 .amex {
-    background-image: url(imgs/flags/amex-flag.svg);
+    background-image: url(../imgs/flags/amex-flag.svg);
 }
 .elo {
-    background-image: url(imgs/flags/elo-flag.svg);
+    background-image: url(../imgs/flags/elo-flag.svg);
 }
 .hipercard {
-    background-image: url(imgs/flags/hipercard-flag.svg);
+    background-image: url(../imgs/flags/hipercard-flag.svg);
 }
 
 .flags span {
@@ -345,10 +355,12 @@ footer {
 }
 
 footer section {
-    margin: 80px 100px 50px 100px;
     display: flex;
     flex-flow: column;
-
+}
+.margin {
+    margin-top: 80px;
+    margin-bottom: 50px;
 }
 
 /* ------------ LINKS -------------- */
@@ -427,13 +439,13 @@ footer section {
     fill: white;
 }
 .imgInsta {
-    background-image: url(imgs/icons/insta-icon.svg);
+    background-image: url(../imgs/icons/insta-icon.svg);
 }
 .imgFace {
-    background-image: url(imgs/icons/face-icon.svg);
+    background-image: url(../imgs/icons/face-icon.svg);
 }
 .imgTwitter {
-    background-image: url(imgs/icons/twitter-icon.svg);
+    background-image: url(../imgs/icons/twitter-icon.svg);
 }
 
 /* ------------------- BRASIL -------------------- */
