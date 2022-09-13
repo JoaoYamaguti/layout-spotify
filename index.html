@@ -5,21 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Spotify Premium</title>
 </head>
 <body>
     <header>
         <nav class="maxWidth">
             <h1 class="logo"><a href="https://spotify.com">Spotify</a></h1>
-            <ul>
-                <li><a href="#">Premium</a></li>
-                <li><a href="#">Suporte</a></li>
-                <li><a href="#">Baixar</a></li>
-                <li>|</li>
-                <li><a href="#"><span>Inscrever-se</span></a></li>
-                <li><a href="#"><span>Entrar</span></a></li>
-            </ul>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Baixar</a></li>
+                    <li>|</li>
+                    <li><a href="#"><span>Inscrever-se</span></a></li>
+                    <li><a href="#"><span>Entrar</span></a></li>
+                </ul>
+            </div>
+            <div class="menuBar">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </nav>
     </header>
 
@@ -30,8 +37,12 @@
                 <p>Depois, pague somente R$ 19,90/mês. Cancele quando quiser.
                 </p>
                 <div class="buttons">
-                    <button class="startPremiumBtn">COMEÇAR</button>
-                    <button class="plansPremiumBtn">VER PLANOS</button>
+                    <!-- <a href="#">
+                        <button class="button startPremiumBtn">COMEÇAR</button>
+                    </a> -->
+                    <a href="#plans">
+                        <button class="button plansPremiumBtn">VER PLANOS</button>
+                    </a>
                 </div>
                 <p class="foot"><span>Sujeito a Termos e Condições.</span> O mês grátis não está disponível para usuários que já experimentaram o Premium.</p>
             </article>
@@ -43,29 +54,37 @@
                 <div class="whys">
                     <div class="whyBoxes">
                         <div class="whyBgSize whyOff "></div>
-                        <h3>Modo offline.</h3>
-                        <p>Ouça música onde estiver.</p>
+                        <div>
+                            <h3>Modo offline.</h3>
+                            <p>Ouça música onde estiver.</p>
+                        </div>
                     </div>
                     <div class="whyBoxes">
                         <div class="whyBgSize whyNoAdd "></div>
-                        <h3>Ouça músicas sem anúncios.</h3>
-                        <p>Curta música, sem parar.</p>
+                        <div>
+                            <h3>Ouça músicas sem anúncios.</h3>
+                            <p>Curta música, sem parar.</p>
+                        </div>
                     </div>
                     <div class="whyBoxes">
                         <div class="whyBgSize whyPlayAll"></div>
-                        <h3>Ouça o que quiser.</h3>
-                        <p>Mesmo no celular ou tablet.</p>
+                        <div>
+                            <h3>Ouça o que quiser.</h3>
+                            <p>Mesmo no celular ou tablet.</p>
+                        </div>
                     </div>
                     <div class="whyBoxes">
                         <div class="whyBgSize whyChooseU"></div>
-                        <h3>Troque de música o quanto quiser.</h3>
-                        <p>Pule quando quiser.</p>
+                        <div>
+                            <h3>Troque de música o quanto quiser.</h3>
+                            <p>Pule quando quiser.</p>
+                        </div>
                     </div>
                 </div>
             </article>
         </section>
 
-        <section>
+        <section id="plans">
             <article class="plansPremium maxWidth">
                 <h2>Escolha seu plano Premium</h2>
                 <p>Ouça sem limites no seu celular, alto-falante e em outros dispositivos.</p>
@@ -99,7 +118,7 @@
                             <li>Escolha a música que quer ouvir</li>
                             <li>Faça um plano pré-pago ou uma assinatura</li>
                         </ul>
-                        <button class="startPremiumBtn planBtn">COMEÇAR</button>
+                        <button class="button startPremiumBtn planBtn">COMEÇAR</button>
                         <p class="foot"><span>Sujeito a Termos e Condições.</span> O mês grátis não está disponível para usuários que já experimentaram o Premium.</p>
                     </div>
 
@@ -119,7 +138,7 @@
                             <li>Ouça sem anúncios, no modo offline e sob demanda</li>
                             <li>Faça um plano pré-pago ou uma assinatura</li>
                         </ul>
-                        <button class="startPremiumBtn planBtn">COMEÇAR</button>
+                        <button class="button startPremiumBtn planBtn">COMEÇAR</button>
                         <p class="foot"><span>Sujeito a Termos e Condições.</span> O mês grátis não está disponível para usuários que já experimentaram o Premium.</p>
                     </div>
 
@@ -141,7 +160,7 @@
                             <li>Spotify Kids: um aplicativo separado, feito especialmente para crianças</li>
                             <li>Faça um plano pré-pago ou uma assinatura</li>
                         </ul>
-                        <button class="startPremiumBtn planBtn">COMEÇAR</button>
+                        <button class="button startPremiumBtn planBtn">COMEÇAR</button>
                         <p class="foot"><span>Sujeito a Termos e Condições.</span> O mês grátis não está disponível para usuários que já experimentaram o Premium.</p>
                     </div>
 
@@ -161,7 +180,7 @@
                             <li>Ouça em qualquer lugar — até no modo offline</li>
                             <li>Escolha a música que quer ouvir</li>
                         </ul>
-                        <button class="startPremiumBtn planBtn">COMEÇAR</button>
+                        <button class="button startPremiumBtn planBtn">COMEÇAR</button>
                         <p class="foot">Oferta disponível somente para estudantes de instituições de ensino superior credenciadas. O mês grátis não está disponível para usuários que já experimentaram o Premium.<span>Sujeito a Termos e Condições.</span> O mês grátis não está disponível para usuários que já experimentaram o Premium.</p>
                     </div>
                 </div>
@@ -172,31 +191,33 @@
         <section class="maxWidth margin">
             <div class="footerLinks">
                 <div class="logo"><a href="#">Spotify</a></div>
-                <div class="columnLinks">
-                    <ul class="listLinks">
-                        <li>EMPRESA</li>
-                        <li>Sobre</li>
-                        <li>Empregos</li>
-                        <li>For the Record</li>
-                    </ul>
-                </div>
-                <div class="columnLinks">
-                    <ul class="listLinks">
-                        <li>COMUNIDADE</li>
-                        <li>Para Artistas</li>
-                        <li>Desenvolvimento</li>
-                        <li>Publicidade</li>
-                        <li>Investidores</li>
-                        <li>Fornecedores</li>
-                    </ul>
-                </div>
-                <div class="columnLinks">
-                    <ul class="listLinks">
-                        <li>LINKS ÚTEIS</li>
-                        <li>Suporte</li>
-                        <li>Player de Web</li>
-                        <li>Aplicativo móvel grátis</li>
-                    </ul>
+                <div class="linksGp">
+                    <div class="columnLinks">
+                        <ul class="listLinks">
+                            <li>EMPRESA</li>
+                            <li>Sobre</li>
+                            <li>Empregos</li>
+                            <li>For the Record</li>
+                        </ul>
+                    </div>
+                    <div class="columnLinks">
+                        <ul class="listLinks">
+                            <li>COMUNIDADE</li>
+                            <li>Para Artistas</li>
+                            <li>Desenvolvimento</li>
+                            <li>Publicidade</li>
+                            <li>Investidores</li>
+                            <li>Fornecedores</li>
+                        </ul>
+                    </div>
+                    <div class="columnLinks">
+                        <ul class="listLinks">
+                            <li>LINKS ÚTEIS</li>
+                            <li>Suporte</li>
+                            <li>Player de Web</li>
+                            <li>Aplicativo móvel grátis</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="columnLinks ">
                     <ul class="linkSM">
@@ -222,5 +243,6 @@
                 </div>
         </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
