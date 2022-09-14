@@ -30,12 +30,7 @@
         display: flex;
         gap: 5px;
     }
-    .plan li {
-        height: 30px;
-    }
-    .plan hr {
-        width: 100%;
-    }
+
     .widthplan {
         height: auto;
     }
@@ -47,6 +42,7 @@
 @media(max-width: 990px) {
     .maxWidth {
         max-width: 770px;
+        width: 90%;
     }
     nav {
         height: 54px;
@@ -138,6 +134,14 @@
         width: 100%;
     }
 
+    .plansPremium {
+        padding-bottom: 2px; 
+    }
+
+    .plan {
+        width: 95%;
+    }
+
     .whyPremium {
         margin-top: 30px;
     }
@@ -147,8 +151,16 @@
         gap: 64px;
     }
     .whyBgSize {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         margin-bottom: 0;
+    }
+
+    .linksGp {
+        flex-flow: column;
+    }
+
+    .linkSM {
+        margin-top: 60px;
     }
 }

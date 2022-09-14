@@ -23,6 +23,9 @@ body {
     display: flex;
     flex-flow: column;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 
 .maxWidth {
     max-width: 1200px;
@@ -173,8 +176,13 @@ main section:nth-child(2) {
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: center;
 
     text-align: center;
+}
+
+.whyBoxes div:nth-child(2) {
+    width: 100%;
 }
 
 .whyBoxes h3 {
@@ -185,12 +193,13 @@ main section:nth-child(2) {
 
 .whyBoxes p {
     font-size: 1.1rem;
+    overflow: auto;
 }
 
 .whyBgSize {
     width: 148px;
     height: 148px;
-    background-position: top center;
+    background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
     margin-bottom: 40px;
@@ -296,6 +305,16 @@ main section:nth-child(3) {
 .widthplan {
     height: 200px;
 }
+.widthplan ul {
+    display: flex;
+    flex-flow: wrap;
+}
+.widthplan li {
+    display: flex;
+    align-self: center;
+
+    font-size: 1.1rem;
+}
 
 .lableBlue {
     width: auto;
@@ -326,7 +345,7 @@ main section:nth-child(3) {
 }
 
 .plan hr {
-    width: auto;
+    width: 100%;
     margin: 10px 0;
 }
 
@@ -412,11 +431,6 @@ footer section {
     color: var(--colorGreen);
 }
 
-.columnLinks:nth-last-child(1) {
-
-    display: flex;
-    justify-content: right;
-}
 .linkSM {
     display: flex;
     flex-flow: row;
@@ -434,8 +448,6 @@ footer section {
     border-radius: 100px;
     background-color: var(--colorGrayImg);
 }
-
-
 
 .linkSM li:hover .imgArea {
     background-color: var(--colorGreen);
@@ -482,7 +494,8 @@ footer section {
     width: 100%;
     display: flex;
     justify-content: space-between;
-
+    gap: 5rem;
+    
     color: var(--colorGraytextfooter);
 }
 
@@ -490,11 +503,13 @@ footer section {
 .supported ul {
     display: flex;
     justify-content: space-between;
-    gap: 1.5rem;
+    flex-flow: wrap;
+    gap: 2rem;
 
     font-size: 0.8rem;
 }
 
 .supported span {
+    width: 100px;
     font-size: 0.9rem;
 }
